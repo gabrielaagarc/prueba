@@ -1,1 +1,21 @@
+Console.WriteLine("Resolución de la ecuación: P = ( x2 - x1 )² + ( y2 - y1 )²");
+int x1, x2, y1, y2; 
+double x, y, xmásy, p;
 
+Console.WriteLine("Digite su dato de entrada para x1 aquí:");
+ x1 = int.Parse(Console.ReadLine());
+ Console.WriteLine("Digite su dato de entrada para x2 aquí:");
+ x2 = int.Parse(Console.ReadLine());
+ Console.WriteLine("Digite su dato de entrada para y1 aquí:");
+ y1 = int.Parse(Console.ReadLine());
+ Console.WriteLine("Digite su dato de entrada para y2 aquí:");
+ y2 = int.Parse(Console.ReadLine());
+
+ x = x2 - x1;
+ y = y2 - y1;
+ x = Math.Pow(x, 2);
+ y = Math.Pow(y, 2);
+ xmásy = x + y;
+ p = xmásy;
+ Console.WriteLine("El resultado de la ecuación es " + p );
+            Console.ReadKey();
